@@ -2,7 +2,7 @@ import React from "react";
 import profile from "../assets/azamProfile.png";
 import { motion } from "framer-motion";
 import { SUMMARY } from "../constants/constant";
-
+import resume from "../assets/MOHD AZAM ANSARI - Resume (1).pdf";
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
   visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: delay } },
@@ -37,6 +37,15 @@ const Hero = () => {
             >
               {SUMMARY}
             </motion.p>
+            <motion.a
+              variants={container(1.5)}
+              initial="hidden"
+              animate="visible"
+              href={resume}
+              className="bg-purple-700 font-bold text-white py-2 px-4 rounded-full shadow-lg align-middle hover:bg-purple-900 mb-4  "
+            >
+              Download Resume
+            </motion.a>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">

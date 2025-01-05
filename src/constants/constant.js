@@ -37,13 +37,12 @@ export const EXPERIENCES = [
     company: "Island Beach Vacation",
     description: `Used advanced JavaScript to create a cross-browser compatible user interface.Designed a new, user interactive landing page, utilizing tools like Reactjs, HTML, XHTML, and CSS, achieving a 5.5/6 user score`,
     technologies: [
-      "Reactjs",
+      "React.js",
       "Tailwind",
       "Bootstrap",
       "Redux",
-      "HTML5",
-      "CSS3",
       "NodeJS",
+      "HTML5",
     ],
   },
 ];
@@ -61,27 +60,13 @@ export const PROJECTS = [
     image: project2,
     description:
       "Developing a high-performance single-page application using React, HTML, CSS, Bootstrap reducing load times by 30%. Implemented responsive and accessible design, ensuring compatibility across multiple devices and browsers, boosting user engagement by 25%.",
-    technologies: [
-      "React js",
-      "SASS/SCSS",
-      "Redux",
-      "Bootstrap",
-      "CSS3",
-      "HTML5",
-    ],
+    technologies: ["React.js", "Bootstrap", "SASS", "Redux", "CSS3"],
   },
   {
     title: "Wolseley UK",
     image: project3,
     description:
       "Pioneered the use of modern web frameworks and libraries, increasing development efficiency and reducing time to market by 18%.Engineered a complex web system application software that increased customer conversion rates by 12%.",
-    technologies: [
-      "React js",
-      "Tailwind",
-      "Redux",
-      "Bootstrap",
-      "CSS3",
-      "HTML5",
-    ],
+    technologies: ["React.js", "Tailwind", "Redux", "Bootstrap"],
   },
 ];
