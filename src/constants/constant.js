@@ -22,28 +22,15 @@ export const EXPERIENCES = [
     role: "HTML Web Developer",
     company: "NTT Data Buisness Solutions",
     description: `Created interactive invoices with HTML, CSS, XHTML, XSLFO and XSLT resulting in improved user experience maintained 98.6% average client satisfaction score across all projects, well above industry average.Implemented code standards that improved team's average productivity by 25%`,
-    technologies: [
-      "HTML5",
-      "Java",
-      "XHTML",
-      "CSS3",
-      "W3C Validator",
-      "Bootstrap",
-    ],
+    technologies: ["Java", "Bootstrap", "XHTML", "W3C Validator"],
   },
   {
     year: "Jan-2022 - Feb-2024",
     role: "Frontend Developer",
     company: "Island Beach Vacation",
-    description: `Used advanced JavaScript to create a cross-browser compatible user interface.Designed a new, user interactive landing page, utilizing tools like Reactjs, HTML, XHTML, and CSS, achieving a 5.5/6 user score`,
-    technologies: [
-      "React.js",
-      "Tailwind",
-      "Bootstrap",
-      "Redux",
-      "NodeJS",
-      "HTML5",
-    ],
+    description: `Designed and implemented user-friendly web applications using React.js and Redux for state management.
+    Utilized Tailwind CSS and Bootstrap to create responsive and visually appealing designs,managed server-side logic using Node.js and Express.js,Integrated MongoDB as the database to efficiently handle large sets of data,Implemented unit testing and debugging processes.`,
+    technologies: ["React.js", "Tailwind", "Redux", "NodeJS", "MongoDB"],
   },
 ];
 
@@ -53,14 +40,14 @@ export const PROJECTS = [
     image: project1,
     description:
       "Developed customer facing invoices from scratch using HTML,CSS,XSL FO, XHTML, XSLT boosting user satisfaction score by 20%.Enhanced system accessibility and responsiveness, leading to 10% increase in daily user.Validating using W3C Validator, Apache-FO,etc.",
-    technologies: ["HTML5", "CSS3", "Java", "Bootstrap", "XHTML"],
+    technologies: ["Java", "Bootstrap", "HTML5", "CSS3", "XHTML"],
   },
   {
     title: "Pure It Water",
     image: project2,
     description:
       "Developing a high-performance single-page application using React, HTML, CSS, Bootstrap reducing load times by 30%. Implemented responsive and accessible design, ensuring compatibility across multiple devices and browsers, boosting user engagement by 25%.",
-    technologies: ["React.js", "Bootstrap", "SASS", "Redux", "CSS3"],
+    technologies: ["React.js", "Bootstrap", "SASS", "Redux"],
   },
   {
     title: "Wolseley UK",
