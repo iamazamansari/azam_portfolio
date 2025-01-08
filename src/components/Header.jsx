@@ -10,7 +10,7 @@ const Header = () => {
         <FaArrowDownAZ size={44} />
         <img className="mx-2 w-24" src={logo} alt="logo" />
       </div>
-      <div className="flex m-8 items-center justify-center gap-4 text-2xl">
+      <div className="flex m-8 items-center justify-center gap-3 text-2xl">
         <a
           className=" hover:translate-y-[-8px] transition duration-300 ease-in-out"
           href="https://www.linkedin.com/in/mohd-azam-ansari-578b4816b/"
