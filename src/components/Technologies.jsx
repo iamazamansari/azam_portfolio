@@ -4,6 +4,10 @@ import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa6";
+import { BiLogoTypescript } from "react-icons/bi";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiMysql } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -44,7 +48,31 @@ const Technologies = () => {
           <RiReactjsLine className=" text-7xl text-cyan-400" />
         </motion.div>
         <motion.div
-          variants={iconVariants(3)}
+          variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className=" rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <RiNextjsFill className="text-7xl" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className=" rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiMysql className="text-7xl text-blue-400" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className=" rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <BiLogoPostgresql className="text-7xl text-sky-700" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(4)}
           initial="initial"
           animate="animate"
           className=" rounded-2xl border-4 border-neutral-800 p-4"
@@ -60,7 +88,7 @@ const Technologies = () => {
           <FaNodeJs className=" text-7xl text-green-500" />
         </motion.div>
         <motion.div
-          variants={iconVariants(2)}
+          variants={iconVariants(5.5)}
           initial="initial"
           animate="animate"
           className=" rounded-2xl border-4 border-neutral-800 p-4"
@@ -76,12 +104,20 @@ const Technologies = () => {
           <RiTailwindCssFill className=" text-7xl text-cyan-400" />
         </motion.div>
         <motion.div
-          variants={iconVariants(4)}
+          variants={iconVariants(7)}
           initial="initial"
           animate="animate"
           className=" rounded-2xl border-4 border-neutral-800 p-4"
         >
           <IoLogoJavascript className=" text-7xl text-yellow-400" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(8)}
+          initial="initial"
+          animate="animate"
+          className=" rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <BiLogoTypescript className="text-7xl text-blue-500" />
         </motion.div>
         <motion.div
           variants={iconVariants(6)}

@@ -2,13 +2,15 @@ import project1 from "../assets/project-1.jpg";
 import project2 from "../assets/project-2.jpg";
 import project3 from "../assets/project-3 (1).jpg";
 
-export const SUMMARY = `Front-end developer with 3 years of experience in designing and building responsive web design in the financial industry. Proficient with CSS and JS Frameworks, with extensive knowledge of UX and User psychology. Notable achievements include boosting the conversion rate of an existing website by 80% with improved code and design.I have honed my skills in front-end technologies like React js, jQuery, Bootstrap, as well as back-end technologies like Node.js, MongoDB, etc.`;
+export const SUMMARY = `Frontend Developer with 3+ years of experience in building high-performance web & mobile applications using React.js, 
+Next.js,React Native and Node.js. Skilled in optimizing performance, integrating REST APIs, and enhancing UI/UX. Passionate about 
+scalable architecture, accessibility, and modern JavaScript frameworks.`;
 
-export const ABOUT = `I am a highly motivated and detail-oriented frontend developer
-              with 3 years of experience specializing in React.js, jQuery.My passion
+export const ABOUT = `I am a highly motivated and detail-oriented Frontend developer
+              with 3 years of experience specializing in React.js, Next.js, React Native, jQuery.My passion
               lies in creating seamless and dynamic web applications that
               provide an outstanding user experience. I bring a strong
-              proficiency in JavaScript, HTML, and CSS, combined with a deep
+              proficiency in JavaScript,Typescript, HTML, and CSS, combined with a deep
               understanding of modern frontend frameworks and libraries.
               I thrive in environments that encourage collaboration and
               innovation. My experience with Bootstrap and Tailwind CSS has
@@ -18,19 +20,41 @@ export const ABOUT = `I am a highly motivated and detail-oriented frontend devel
 
 export const EXPERIENCES = [
   {
-    year: "July-2024 - Present",
-    role: "HTML Web Developer",
+    year: "July-2024 - Feb-2025",
+    role: "HTML Developer",
     company: "NTT Data Buisness Solutions",
-    description: `Created interactive invoices with HTML, CSS, XHTML, XSLFO and XSLT resulting in improved user experience maintained 98.6% average client satisfaction score across all projects, well above industry average.Implemented code standards that improved team's average productivity by 25%`,
-    technologies: ["Java", "Bootstrap", "XHTML", "W3C Validator"],
+    description: `• Developed SPAs using React.js, MySQL, Tailwind CSS, Bootstrap, Java, XSLT, XSLFO, HTML, and CSS, improving 
+responsiveness and achieving a 98.6% client satisfaction score.
+• Integrated REST APIs with MySQL for optimized data handling, improving query performance by 25%.
+• Enhanced UI accessibility, leading to a 10% increase in daily user engagement.`,
+    technologies: [
+      "React.js",
+      "MySQL",
+      "Java",
+      "Bootstrap",
+      "XHTML",
+      "W3C Validator",
+    ],
   },
   {
     year: "Jan-2022 - Feb-2024",
     role: "Frontend Developer",
     company: "Island Beach Vacation",
-    description: `Designed and implemented user-friendly web applications using React.js and Redux for state management.
-    Utilized Tailwind CSS and Bootstrap to create responsive and visually appealing designs,managed server-side logic using Node.js and Express.js,Integrated MongoDB as the database to efficiently handle large sets of data,Implemented unit testing and debugging processes.`,
-    technologies: ["React.js", "Tailwind", "Redux", "NodeJS", "MongoDB"],
+    description: `• Designed and developed a responsive web & mobile app using React.js, React Native, Tailwind CSS, and Bootstrap, 
+achieving a 5.5/6 user rating.
+• Developed scalable & SEO-friendly web applications using Next.js, leveraging SSR and SSG for optimal performance 
+and maintainability by 20%.
+• Developed a RESTful API using Node.js improving backend efficiency and secure CRUD operations.`,
+    technologies: [
+      "React.js",
+      "React Native",
+      "MySQL",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Redux",
+      "NodeJS",
+      "MongoDB",
+    ],
   },
 ];
 
@@ -38,22 +62,49 @@ export const PROJECTS = [
   {
     title: "ICBC Standard Bank",
     image: project1,
-    description:
-      "Developed customer facing invoices from scratch using HTML,CSS,XSL FO, XHTML, XSLT boosting user satisfaction score by 20%.Enhanced system accessibility and responsiveness, leading to 10% increase in daily user.Validating using W3C Validator, Apache-FO,etc.",
-    technologies: ["Java", "Bootstrap", "HTML5", "CSS3", "XHTML"],
+    description: `• Automated invoice generation using React.js, jQuery, HTML, CSS, XSLFO, Java, and XSLT, reducing manual efforts 
+by 30%.• Improved accessibility and system responsiveness, leading to a 10% increase in daily active users.`,
+    technologies: [
+      "React.js",
+      "jQuery",
+      "MySQL",
+      "Java",
+      "Bootstrap",
+      "HTML5",
+      "CSS3",
+      "XHTML",
+    ],
   },
   {
     title: "Pure It Water",
     image: project2,
-    description:
-      "Developing a high-performance single-page application using React, HTML, CSS, Bootstrap reducing load times by 30%. Implemented responsive and accessible design, ensuring compatibility across multiple devices and browsers, boosting user engagement by 25%.",
-    technologies: ["React.js", "Bootstrap", "SASS", "Redux"],
+    description: `• Automated invoice generation using React.js, jQuery, HTML, CSS, XSLFO, Java, and XSLT, reducing manual efforts 
+    by 30%.
+    • Improved accessibility and system responsiveness, leading to a 10% increase in daily active users.`,
+    technologies: [
+      "React.js",
+      "Next.js",
+      "React Native",
+      "MySQL",
+      "Bootstrap",
+      "SASS",
+      "Redux",
+    ],
   },
   {
     title: "Wolseley UK",
     image: project3,
-    description:
-      "Pioneered the use of modern web frameworks and libraries, increasing development efficiency and reducing time to market by 18%.Engineered a complex web system application software that increased customer conversion rates by 12%.",
-    technologies: ["React.js", "Tailwind", "Redux", "Bootstrap"],
+    description: `• Developed an e-commerce platform using React.js, Next.js and MySQL, increasing user engagement by 18%.
+• Designed custom APIs for orders, payments, and customer profiles, improving efficiency.
+• Integrated message queues (MQ) to enhance order processing speed and reliability`,
+    technologies: [
+      "React.js",
+      "Next.js",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Redux",
+      "Bootstrap",
+      "Node.js",
+    ],
   },
 ];
