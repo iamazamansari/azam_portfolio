@@ -9,13 +9,13 @@ import { RiNextjsFill } from "react-icons/ri";
 import { SiMysql } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 
-const iconVariants = (duration) => ({
-  initial: { y: -10 },
+const iconVariants = (duration, amplitude) => ({
+  initial: { y: 0 },
   animate: {
-    y: [10, -10],
+    y: [-amplitude, amplitude],
     transition: {
       duration: duration,
-      ease: "linear",
+      ease: "easeInOut",
       repeat: Infinity,
       repeatType: "reverse",
     },
@@ -29,7 +29,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className=" my-20 text-center  text-4xl"
+        className=" my-20 text-center text-4xl"
       >
         Technologies
       </motion.h2>
@@ -40,7 +40,7 @@ const Technologies = () => {
         className="flex flex-wrap items-center justify-center gap-4"
       >
         <motion.div
-          variants={iconVariants(2.5)}
+          variants={iconVariants(2.5, 5)}
           initial="initial"
           animate="animate"
           className=" rounded-2xl border-4 border-neutral-800 p-4"
@@ -48,7 +48,7 @@ const Technologies = () => {
           <RiReactjsLine className=" text-7xl text-cyan-400" />
         </motion.div>
         <motion.div
-          variants={iconVariants(3.5)}
+          variants={iconVariants(3.5, 7)}
           initial="initial"
           animate="animate"
           className=" rounded-2xl border-4 border-neutral-800 p-4"
@@ -56,7 +56,7 @@ const Technologies = () => {
           <RiNextjsFill className="text-7xl" />
         </motion.div>
         <motion.div
-          variants={iconVariants(4.5)}
+          variants={iconVariants(4.5, 9)}
           initial="initial"
           animate="animate"
           className=" rounded-2xl border-4 border-neutral-800 p-4"
@@ -64,7 +64,7 @@ const Technologies = () => {
           <SiMysql className="text-7xl text-blue-400" />
         </motion.div>
         <motion.div
-          variants={iconVariants(4.5)}
+          variants={iconVariants(4.5, 11)}
           initial="initial"
           animate="animate"
           className=" rounded-2xl border-4 border-neutral-800 p-4"
@@ -72,7 +72,7 @@ const Technologies = () => {
           <BiLogoPostgresql className="text-7xl text-sky-700" />
         </motion.div>
         <motion.div
-          variants={iconVariants(4)}
+          variants={iconVariants(4, 13)}
           initial="initial"
           animate="animate"
           className=" rounded-2xl border-4 border-neutral-800 p-4"
@@ -80,7 +80,7 @@ const Technologies = () => {
           <SiMongodb className=" text-7xl text-green-500" />
         </motion.div>
         <motion.div
-          variants={iconVariants(5)}
+          variants={iconVariants(5, 15)}
           initial="initial"
           animate="animate"
           className=" rounded-2xl border-4 border-neutral-800 p-4"
@@ -88,7 +88,7 @@ const Technologies = () => {
           <FaNodeJs className=" text-7xl text-green-500" />
         </motion.div>
         <motion.div
-          variants={iconVariants(5.5)}
+          variants={iconVariants(5.5, 17)}
           initial="initial"
           animate="animate"
           className=" rounded-2xl border-4 border-neutral-800 p-4"
@@ -96,7 +96,7 @@ const Technologies = () => {
           <FaBootstrap className=" text-7xl text-violet-500" />
         </motion.div>
         <motion.div
-          variants={iconVariants(6)}
+          variants={iconVariants(6, 19)}
           initial="initial"
           animate="animate"
           className=" rounded-2xl border-4 border-neutral-800 p-4"
@@ -104,7 +104,7 @@ const Technologies = () => {
           <RiTailwindCssFill className=" text-7xl text-cyan-400" />
         </motion.div>
         <motion.div
-          variants={iconVariants(7)}
+          variants={iconVariants(7, 21)}
           initial="initial"
           animate="animate"
           className=" rounded-2xl border-4 border-neutral-800 p-4"
@@ -112,7 +112,7 @@ const Technologies = () => {
           <IoLogoJavascript className=" text-7xl text-yellow-400" />
         </motion.div>
         <motion.div
-          variants={iconVariants(8)}
+          variants={iconVariants(8, 23)}
           initial="initial"
           animate="animate"
           className=" rounded-2xl border-4 border-neutral-800 p-4"
@@ -120,7 +120,7 @@ const Technologies = () => {
           <BiLogoTypescript className="text-7xl text-blue-500" />
         </motion.div>
         <motion.div
-          variants={iconVariants(6)}
+          variants={iconVariants(6, 25)}
           initial="initial"
           animate="animate"
           className=" rounded-2xl border-4 border-neutral-800 p-4"

@@ -1,6 +1,8 @@
 import React from "react";
 import { PROJECTS } from "../constants/constant";
 import { motion } from "framer-motion";
+import { FaExternalLinkAlt } from "react-icons/fa"; // Import the icon
+
 const Projects = () => {
   return (
     <div className=" border-b border-neutral-900 pb-4">
@@ -35,11 +37,25 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className=" w-full max-w-xl lg:w-3/4"
             >
-              <h6 className=" mb-2 font-semibold">{project.title}</h6>
+              {/* Always display the title as h6 */}
+              <div className="mb-2 flex items-center gap-2"> {/* Added a div for flexible layout */}
+                <h6 className="font-semibold">{project.title}</h6>
+                {/* Conditionally render only the icon as a link */}
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-blue-400 hover:text-blue-600" // Styled to look like a clickable icon
+                  >
+                    <FaExternalLinkAlt />
+                  </a>
+                )}
+              </div>
               <p className=" mb-2 text-neutral-400">{project.description}</p>
-              {project.technologies.map((tech, index) => (
+              {project.technologies.map((tech, techIndex) => (
                 <span
-                  key={index}
+                  key={techIndex}
                   className=" mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900 "
                 >
                   {tech}

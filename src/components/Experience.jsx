@@ -1,6 +1,7 @@
 import React from "react";
 import { EXPERIENCES } from "../constants/constant";
 import { motion } from "framer-motion";
+
 const Experience = () => {
   return (
     <div className=" border-b border-neutral-900 pb-4 ">
@@ -34,14 +35,17 @@ const Experience = () => {
                 <span className=" text-sm text-purple-100">{exp.company}</span>
               </h6>
               <p className=" mb-4 text-neutral-400">{exp.description}</p>
-              {exp.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className=" mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
-                >
-                  {tech}
-                </span>
-              ))}
+              {/* Added a div wrapper with flex-wrap and gap-x-2 gap-y-2 */}
+              <div className="flex flex-wrap gap-x-2 gap-y-2">
+                {exp.technologies.map((tech, techIndex) => (
+                  <span
+                    key={techIndex} // Changed index to techIndex for unique keys within the map
+                    className="rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           </div>
         ))}
