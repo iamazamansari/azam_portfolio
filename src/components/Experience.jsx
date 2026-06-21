@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <div className=" border-b border-neutral-900 pb-4 ">
+    <div id="experience" className=" border-b border-neutral-300 pb-4 dark:border-neutral-900 ">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -22,7 +22,9 @@ const Experience = () => {
               transition={{ duration: 1 }}
               className=" w-full lg:w-1/4"
             >
-              <p className=" mb-2 text-sm text-neutral-400">{exp.year}</p>
+              <p className=" mb-2 text-sm text-neutral-600 dark:text-neutral-400">
+                {exp.year}
+              </p>
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
@@ -32,15 +34,19 @@ const Experience = () => {
             >
               <h6 className=" mb-2 font-semibold">
                 {exp.role}-{" "}
-                <span className=" text-sm text-purple-100">{exp.company}</span>
+                <span className=" text-sm text-purple-600 dark:text-purple-100">
+                  {exp.company}
+                </span>
               </h6>
-              <p className=" mb-4 text-neutral-400">{exp.description}</p>
+              <p className=" mb-4 whitespace-pre-line text-neutral-600 dark:text-neutral-400">
+                {exp.description}
+              </p>
               {/* Added a div wrapper with flex-wrap and gap-x-2 gap-y-2 */}
               <div className="flex flex-wrap gap-x-2 gap-y-2">
                 {exp.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex} // Changed index to techIndex for unique keys within the map
-                    className="rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
+                    className="rounded bg-neutral-200 px-2 py-1 text-sm font-medium text-purple-700 dark:bg-neutral-900 dark:text-purple-300"
                   >
                     {tech}
                   </span>

@@ -6,5 +6,10 @@
 
 
 :root{
-  font-family: "Inter", serif;;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import { PROJECTS } from "../constants/constant";
 import { motion } from "framer-motion";
-import { FaExternalLinkAlt } from "react-icons/fa"; // Import the icon
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <div className=" border-b border-neutral-900 pb-4">
+    <div id="projects" className=" border-b border-neutral-300 pb-4 dark:border-neutral-900">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -40,27 +40,49 @@ const Projects = () => {
               {/* Always display the title as h6 */}
               <div className="mb-2 flex items-center gap-2"> {/* Added a div for flexible layout */}
                 <h6 className="font-semibold">{project.title}</h6>
-                {/* Conditionally render only the icon as a link */}
+                {project.year && (
+                  <span className="text-sm text-neutral-500">
+                    {project.year}
+                  </span>
+                )}
                 {project.link && (
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-blue-400 hover:text-blue-600" // Styled to look like a clickable icon
+                    title="Live demo"
+                    aria-label={`${project.title} live demo`}
+                    className="text-sm text-neutral-500 transition hover:text-purple-500"
                   >
                     <FaExternalLinkAlt />
                   </a>
                 )}
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Source code"
+                    aria-label={`${project.title} source code`}
+                    className="text-base text-neutral-500 transition hover:text-purple-500"
+                  >
+                    <FaGithub />
+                  </a>
+                )}
               </div>
-              <p className=" mb-2 text-neutral-400">{project.description}</p>
+              <p className=" mb-2 whitespace-pre-line text-neutral-600 dark:text-neutral-400">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech, techIndex) => (
                 <span
                   key={techIndex}
-                  className=" mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900 "
+                  className=" rounded bg-neutral-200 px-2 py-1 text-sm font-medium text-purple-700 dark:bg-neutral-900 dark:text-purple-300 "
                 >
                   {tech}
                 </span>
               ))}
+              </div>
             </motion.div>
           </div>
         ))}
